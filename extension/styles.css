@@ -1,0 +1,155 @@
+/* TrustIndex Browser Extension - Global Styles */
+
+/* Trust Badge Styles */
+#trustindex-badge {
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+  z-index: 2147483647 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  background: rgba(18, 18, 26, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 12px !important;
+  padding: 12px !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+  min-width: 200px !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+#trustindex-badge:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4) !important;
+}
+
+.trustindex-container {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.trustindex-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 4px !important;
+}
+
+.trustindex-logo {
+  background: #c8f064 !important;
+  color: #0a0a0f !important;
+  font-weight: bold !important;
+  font-size: 10px !important;
+  padding: 4px !important;
+  border-radius: 4px !important;
+  font-family: monospace !important;
+}
+
+.trustindex-title {
+  color: #f0ede8 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+.trustindex-score {
+  display: flex !important;
+  justify-content: center !important;
+  margin: 8px 0 !important;
+}
+
+.trustindex-status {
+  color: #8a8799 !important;
+  font-size: 11px !important;
+  text-align: center !important;
+  line-height: 1.3 !important;
+}
+
+.trustindex-grade {
+  background: rgba(200, 240, 100, 0.2) !important;
+  color: #c8f064 !important;
+  font-size: 10px !important;
+  padding: 4px 8px !important;
+  border-radius: 12px !important;
+  text-align: center !important;
+  font-weight: 500 !important;
+  margin-top: 4px !important;
+}
+
+.trustindex-grade.grade-b {
+  background: rgba(124, 111, 236, 0.2) !important;
+  color: #a89df0 !important;
+}
+
+.trustindex-grade.grade-c {
+  background: rgba(255, 196, 77, 0.2) !important;
+  color: #ffc44d !important;
+}
+
+.trustindex-grade.grade-d {
+  background: rgba(255, 95, 87, 0.2) !important;
+  color: #ff5f57 !important;
+}
+
+/* Modal Styles */
+.trustindex-modal {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  z-index: 2147483647 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.trustindex-modal-content {
+  background: rgba(18, 18, 26, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 16px !important;
+  padding: 24px !important;
+  max-width: 500px !important;
+  max-height: 80vh !important;
+  overflow-y: auto !important;
+  color: #f0ede8 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #trustindex-badge {
+    top: 10px !important;
+    right: 10px !important;
+    min-width: 160px !important;
+    padding: 8px !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  #trustindex-badge {
+    background: #000 !important;
+    border: 2px solid #fff !important;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  #trustindex-badge {
+    transition: none !important;
+  }
+
+  #trustindex-badge:hover {
+    transform: none !important;
+  }
+}
+
+/* Dark mode optimization */
+@media (prefers-color-scheme: dark) {
+  #trustindex-badge {
+    background: rgba(10, 10, 15, 0.98) !important;
+  }
+}
